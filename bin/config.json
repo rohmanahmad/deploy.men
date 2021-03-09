@@ -1,0 +1,56 @@
+{
+    "projects": [
+        {
+            "name": "r10-frontend",
+            "path": "/Users/rohmanahmad/Projects/office/r10-frontend",
+            "included_files": [
+                "public/index.html",
+                "public/bundle.*",
+                "public/assets"
+            ],
+            "excluded_files": [
+                "data"
+            ]
+        },
+        {
+            "name": "r10-api",
+            "path": "/Users/rohmanahmad/Projects/office/r10-api",
+            "included_files": [
+                "index.html",
+                "bundle.*",
+                "assets"
+            ],
+            "excluded_files": [
+                "data"
+            ]
+        }
+    ],
+    "servers": [
+        {
+            "ip": "127.0.0.1",
+            "port": "22",
+            "usernames": [
+                "deploy",
+                "rohmanahmad",
+                "standartuser"
+            ],
+            "paths": [
+                "/tmp/tes",
+                "/home/deploy/tes",
+                "/home/developer/tes"
+            ]
+        }
+    ],
+    "commands": {
+        "before": [
+            "npm run build",
+            "npm run build-staging",
+            "npm run build-test"
+        ],
+        "after": [
+            "mv {PATH} /tmp/tes",
+            "rm {PATH}",
+            "cp {PATH} /tmp/tes2"
+        ]
+    }
+}

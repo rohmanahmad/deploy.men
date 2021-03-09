@@ -4,7 +4,11 @@
   "description": "deployment for myself via rsync",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "build-win64": "pkg --target node14-windows-x64 --public -o bin/deploy.men-win64 .",
+    "build-win32": "pkg --target node14-windows-x32 --public -o bin/deploy.men-win32 .",
+    "build-linux64": "pkg --target node14-linux-x64 --public -o bin/deploy.men-linux-64 .",
+    "build-linux32": "pkg --target node14-linux-x32 --public -o bin/deploy.men-linux-32 .",
+    "build-osx": "pkg --target node14-osx-x64 --public -o bin/deploy.men ."
   },
   "repository": {
     "type": "git",
@@ -21,5 +25,20 @@
   "bugs": {
     "url": "https://github.com/rohmanahmad/deploy.men/issues"
   },
-  "homepage": "https://github.com/rohmanahmad/deploy.men#readme"
+  "homepage": "https://github.com/rohmanahmad/deploy.men#readme",
+  "dependencies": {
+    "chalk": "^4.1.0",
+    "figlet": "^1.5.0",
+    "inquirer": "^8.0.0",
+    "shelljs": "^0.8.4"
+  },
+  "devDependencies": {
+    "pkg": "^4.4.9"
+  },
+  "pkg": {
+    "assets": [
+      "node_modules/figlet/fonts/**/*"
+    ]
+  },
+  "bin": "index.js"
 }
