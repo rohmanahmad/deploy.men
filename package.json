@@ -1,0 +1,25 @@
+{
+  "name": "deploy-men",
+  "version": "0.0.1",
+  "description": "deployment for myself via rsync",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/rohmanahmad/deploy.men.git"
+  },
+  "keywords": [
+    "deploy",
+    "server",
+    "vps",
+    "rsync"
+  ],
+  "author": "rohmanahmad",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/rohmanahmad/deploy.men/issues"
+  },
+  "homepage": "https://github.com/rohmanahmad/deploy.men#readme"
+}
