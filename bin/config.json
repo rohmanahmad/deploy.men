@@ -39,6 +39,20 @@
                 "/home/deploy/tes",
                 "/home/developer/tes"
             ]
+        },
+        {
+            "ip": "127.0.0.2",
+            "port": "22",
+            "usernames": [
+                "deploy",
+                "rohmanahmad",
+                "standartuser"
+            ],
+            "paths": [
+                "/tmp/tes",
+                "/home/deploy/tes",
+                "/home/developer/tes"
+            ]
         }
     ],
     "commands": {
