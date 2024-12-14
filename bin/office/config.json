@@ -1,0 +1,572 @@
+{
+    "debug": false,
+    "projects": [
+        {
+            "name": "RIPPLE10 FE BETA",
+            "path": "/Users/ivo/Projects/office/ripple10/frontend/beta",
+            "included_files": [
+                "public/*"
+            ],
+            "excluded_files": [
+                "data"
+            ]
+        },
+        {
+            "name": "RIPPLE10 FE Prod",
+            "path": "/Users/ivo/Projects/office/ripple10/frontend/release",
+            "included_files": [
+                "public/*"
+            ],
+            "excluded_files": [
+                "data"
+            ]
+        },
+        {
+            "name": "RIPPLE10 FE DEVELOPMENT",
+            "path": "/Users/ivo/Projects/office/ripple10/frontend/development",
+            "included_files": [
+                "public/*"
+            ],
+            "excluded_files": [
+                "data"
+            ]
+        },
+        {
+            "name": "R10 API BETA",
+            "path": "/Users/ivo/Projects/office/ripple10/api/beta",
+            "included_files": [
+                "app",
+                "bootstrap",
+                "extras",
+                "config",
+                "providers",
+                "public",
+                "resources",
+                "server.js",
+                "package.json"
+            ],
+            "excluded_files": []
+        },
+        {
+            "name": "R10 API Production",
+            "path": "/Users/ivo/Projects/office/ripple10/api/release",
+            "included_files": [
+                "app",
+                "bootstrap",
+                "extras",
+                "config",
+                "providers",
+                "public",
+                "resources",
+                "server.js",
+                "package.json"
+            ],
+            "excluded_files": []
+        },
+        {
+            "name": "R10 API DEVELOPMENT",
+            "path": "/Users/ivo/Projects/office/ripple10/api/development",
+            "included_files": [
+                "app",
+                "bootstrap",
+                "extras",
+                "config",
+                "providers",
+                "public",
+                "resources",
+                "server.js",
+                "package.json"
+            ],
+            "excluded_files": []
+        },
+        {
+            "name": "CommandCenter WHITELABEL command-center.medialistening.digipop.ai",
+            "path": "/Users/ivo/Projects/office/ripple10/Command-Center-Whitelabels/command-center.medialistening.digipop.ai",
+            "included_files": [
+                "application",
+                "assets",
+                "system",
+                ".htaccess",
+                "index.php"
+            ],
+            "excluded_files": []
+        },
+        {
+            "name": "WHITELABEL FE monitoring.boltpetfoodid.com",
+            "path": "/Users/ivo/Projects/office/ripple10/frontend/whitelabels/monitoring.boltpetfoodid.com",
+            "included_files": [
+                "public/*"
+            ],
+            "excluded_files": [
+                "data"
+            ]
+        },
+        {
+            "name": "WHITELABEL FE apps.rmsupersquad.com",
+            "path": "/Users/ivo/Projects/office/ripple10/frontend/whitelabels/apps.rmsupersquad.com",
+            "included_files": [
+                "public/*"
+            ],
+            "excluded_files": [
+                "data"
+            ]
+        },
+        {
+            "name": "WHITELABEL FE mdmedia-digital.com",
+            "path": "/Users/ivo/Projects/office/ripple10/frontend/whitelabels/mdmedia",
+            "included_files": [
+                "public/*"
+            ],
+            "excluded_files": [
+                "data"
+            ]
+        },
+        {
+            "name": "WHITELABEL FE medialistening.digipop.ai",
+            "path": "/Users/ivo/Projects/office/ripple10/frontend/whitelabels/digipop",
+            "included_files": [
+                "public/*"
+            ],
+            "excluded_files": [
+                "data"
+            ]
+        },
+        {
+            "name": "WHITELABEL FE skema",
+            "path": "/Users/ivo/Projects/office/ripple10/frontend/whitelabels/socialmedia.skema.co.id",
+            "included_files": [
+                "public/*"
+            ],
+            "excluded_files": [
+                "data"
+            ]
+        },
+        {
+            "name": "WHITELABEL FE shift-inc",
+            "path": "/Users/ivo/Projects/office/ripple10/frontend/whitelabels/shift-inc",
+            "included_files": [
+                "public/*"
+            ],
+            "excluded_files": [
+                "data"
+            ]
+        },
+        {
+            "name": "WHITELABEL FE cakra12.com",
+            "path": "/Users/ivo/Projects/office/ripple10/frontend/whitelabels/cakra12.com",
+            "included_files": [
+                "public/*"
+            ],
+            "excluded_files": [
+                "data"
+            ]
+        },
+        {
+            "name": "WHITELABEL FE impac-id.com",
+            "path": "/Users/ivo/Projects/office/ripple10/frontend/whitelabels/impac-id.com",
+            "included_files": [
+                "public/*"
+            ],
+            "excluded_files": [
+                "data"
+            ]
+        },
+        {
+            "name": "WHITELABEL FE trisula-analytics.peris.ai",
+            "path": "/Users/ivo/Projects/office/ripple10/frontend/whitelabels/trisula-analytics.peris.ai",
+            "included_files": [
+                "public/*"
+            ],
+            "excluded_files": [
+                "data"
+            ]
+        },
+        {
+            "name": "WHITELABEL FE virtuclass.com",
+            "path": "/Users/ivo/Projects/office/ripple10/frontend/whitelabels/virtuclass.com",
+            "included_files": [
+                "public/*"
+            ],
+            "excluded_files": [
+                "data"
+            ]
+        },
+        {
+            "name": "WHITELABEL FE atiasistem.id",
+            "path": "/Users/ivo/Projects/office/ripple10/frontend/whitelabels/atiasistem.id",
+            "included_files": [
+                "public/*"
+            ],
+            "excluded_files": [
+                "data"
+            ]
+        },
+        {
+            "name": "WHITELABEL FE dss-socialmediamonitoring.com",
+            "path": "/Users/ivo/Projects/office/ripple10/frontend/whitelabels/dss-socialmediamonitoring.com",
+            "included_files": [
+                "public/*"
+            ],
+            "excluded_files": [
+                "data"
+            ]
+        },
+        {
+            "name": "WHITELABEL FE my.whizper.id",
+            "path": "/Users/ivo/Projects/office/ripple10/frontend/whitelabels/whizper.id",
+            "included_files": [
+                "public/*"
+            ],
+            "excluded_files": [
+                "data"
+            ]
+        },
+        {
+            "name": "WHITELABEL FE my.whizper.id (BETA)",
+            "path": "/Users/ivo/Projects/office/ripple10/frontend/whitelabels/whizper.id",
+            "included_files": [
+                "public/*"
+            ],
+            "excluded_files": [
+                "data"
+            ]
+        },
+        {
+            "name": "app2.cakradata.id",
+            "path": "/Users/ivo/Projects/office/ripple10/frontend/whitelabels/cakradata",
+            "included_files": [
+                "public/*"
+            ],
+            "excluded_files": [
+                "data"
+            ]
+        },
+        {
+            "name": "crawl-api PROD",
+            "path": "/Users/ivo/Projects/office/ripple10/crawl-api/release",
+            "included_files": [
+                "app",
+                "config",
+                "crawl",
+                "database",
+                ".nvmrc",
+                "providers",
+                "public",
+                "resources",
+                "package.json",
+                "ace",
+                "pm2.js",
+                "start"
+            ],
+            "excluded_files": [
+                ".vscode",
+                ".gitignore",
+                ".eslintrc",
+                ".env-example",
+                ".env",
+                ".editorconfig",
+                ".htpasswd",
+                "crawl-api.code-workspace",
+                "node_modules",
+                "package-lock.json",
+                "remote_start.js",
+                "remote_stop.js",
+                "yarn.lock",
+                "README.md"
+            ]
+        },
+        {
+            "name": "crawl-api TESTING",
+            "path": "/Users/ivo/Projects/office/ripple10/crawl-api/development",
+            "included_files": [
+                "app",
+                "config",
+                "crawl",
+                "database",
+                "providers",
+                "public",
+                "resources",
+                "package.json",
+                "ace",
+                "pm2.js",
+                "go-pm2.js",
+                ".nvmrc",
+                "ecosystem.config.js",
+                "start"
+            ],
+            "excluded_files": [
+                ".vscode",
+                ".gitignore",
+                ".eslintrc",
+                ".env-example",
+                ".env",
+                ".editorconfig",
+                ".htpasswd",
+                "crawl-api.code-workspace",
+                "node_modules",
+                "package-lock.json",
+                "remote_start.js",
+                "remote_stop.js",
+                "yarn.lock",
+                "README.md"
+            ]
+        },
+        {
+            "name": "r10-analytics",
+            "path": "/Users/ivo/Projects/office/ripple10/analytics",
+            "included_files": [
+                "components",
+                "helpers",
+                ".nvmrc",
+                "libraries",
+                "name_importer.js",
+                "name_splitter.js",
+                "gender_analytics.js",
+                "package.json"
+            ],
+            "excluded_files": [
+                ".env",
+                "components/name_importer/logs",
+                "components/name_splitter/logs",
+                "node_modules",
+                "README.md",
+                "yarn.lock",
+                "LICENSE",
+                ".gitignore",
+                ".vscode"
+            ]
+        },
+        {
+            "name": "API Borobudur",
+            "path": "/Users/ivo/Projects/office/ripple10/api/release",
+            "included_files": [
+                "app",
+                "bootstrap",
+                "extras",
+                "config",
+                ".nvmrc",
+                "providers",
+                "public",
+                "resources",
+                "server.js",
+                "package.json"
+            ],
+            "excluded_files": []
+        },
+        {
+            "name": "R10 TOOLS",
+            "path": "/Users/ivo/Projects/office/ripple10/tools",
+            "included_files": [
+                "*"
+            ],
+            "excluded_files": [
+                "outputs",
+                "data/autosentiment-by-accounts/logs",
+                "data/cache-optimization/logs",
+                "data/copy-data",
+                "data/kemenkes-malaysia/logs",
+                "data/location-extraction/logs",
+                "data/location-extraction/last-cursor.txt",
+                "data/project-hashtags/logs",
+                ".env",
+                ".gitignore",
+                "deploydev.sh",
+                "package-lock.json",
+                "env-example",
+                "eslintrc.js",
+                ".vscode",
+                "node_modules"
+            ]
+        },
+        {
+            "name": "r10-analytics",
+            "path": "/Users/ivo/Projects/office/r10-analytics",
+            "included_files": [
+                "components",
+                "helpers",
+                ".nvmrc",
+                "libraries",
+                "name_importer.js",
+                "name_splitter.js",
+                "package.json"
+            ],
+            "excluded_files": [
+                ".env",
+                "components/name_importer/logs",
+                "components/name_splitter/logs",
+                "node_modules",
+                "README.md",
+                "yarn.lock",
+                "LICENSE",
+                ".gitignore",
+                ".vscode"
+            ]
+        },
+        {
+            "name": "office.ripple10.com",
+            "path": "/Users/ivo/Projects/office/ripple10/office/release",
+            "included_files": [
+                "app",
+                "config",
+                ".nvmrc",
+                "database",
+                "libraries",
+                "providers",
+                "public",
+                "resources",
+                "start",
+                "package.json",
+                "server.js"
+            ],
+            "excluded_files": [
+            ]
+        },
+        {
+            "name": "office.r10.co",
+            "path": "/Users/ivo/Projects/office/ripple10/office/development",
+            "included_files": [
+                "app",
+                "config",
+                ".nvmrc",
+                "database",
+                "libraries",
+                "providers",
+                "public",
+                "resources",
+                "start",
+                "package.json",
+                "server.js"
+            ],
+            "excluded_files": [
+            ]
+        }
+    ],
+    "servers": [
+        {
+            "name": "Client Tools Server",
+            "ip": "66.70.189.153",
+            "port": "51999",
+            "usernames": [
+                "deploy"
+            ],
+            "paths": [
+                "/home/deploy/app/bin/server-crawl",
+                "/home/deploy/app/bin/testing-code/crawl-api",
+                "/home/deploy/app/bin/server-crawl-2",
+                "/home/deploy/app/bin/new-tools"
+            ]
+        },
+        {
+            "name": "Utilities Tools Server",
+            "ip": "66.70.190.170",
+            "port": "51999",
+            "usernames": [
+                "deploy"
+            ],
+            "paths": [
+                "/home/deploy/r10-tools"
+            ]
+        },
+        {
+            "name": "Internal Tools Server",
+            "ip": "142.44.243.219",
+            "port": "51999",
+            "usernames": [
+                "deploy"
+            ],
+            "paths": [
+                "/home/deploy/app/bin/new-tools",
+                "/home/deploy/app/bin/server-crawl"
+            ]
+        },
+        {
+            "name": "R10 Staging Server 1",
+            "ip": "159.65.10.9",
+            "port": "22",
+            "usernames": [
+                "deploy"
+            ],
+            "paths": [
+                "/home/deploy/v3.r10.co",
+                "/home/deploy/apiv2.r10.co",
+                "/home/deploy/vendor-fe.r10.co",
+                "/home/deploy/vendor-api.r10.co",
+                "/home/deploy/new-tools"
+            ]
+        },
+        {
+            "name": "R10 Analytics",
+            "ip": "144.217.14.234",
+            "port": "51999",
+            "usernames": [
+                "deploy"
+            ],
+            "paths": [
+                "/home/deploy/r10-analytics"
+            ]
+        },
+        {
+            "name": "R10 Web 2",
+            "ip": "144.217.255.223",
+            "port": "51999",
+            "usernames": [
+                "deploy"
+            ],
+            "paths": [
+                "/home/deploy/websites/office.ripple10.com",
+                "/home/deploy/websites/office.r10.co",
+                "/var/www/v2/backend",
+                "/var/www/v2/frontend",
+                "/home/deploy/r10-whitelabels/monitoring.boltpetfoodid.com",
+                "/home/deploy/r10-whitelabels/apps.rmsupersquad.com",
+                "/home/deploy/r10-whitelabels/mdmedia.digital.com",
+                "/home/deploy/r10-whitelabels/medialistening.digipop.ai",
+                "/home/deploy/r10-whitelabels/shift-inc",
+                "/home/deploy/r10-whitelabels/impac-id.com",
+                "/home/deploy/r10-whitelabels/virtuclass.com",
+                "/home/deploy/r10-whitelabels/atiasistem.id",
+                "/home/deploy/r10-whitelabels/socialmedia.skema.co.id",
+                "/home/deploy/r10-whitelabels/whizper.id",
+                "/home/deploy/r10-whitelabels/whizper.id/beta",
+                "/home/deploy/r10-whitelabels/cakradata.id",
+                "/home/deploy/r10-whitelabels/trisula-analytics.peris.ai",
+                "/home/deploy/r10-whitelabels/dss-socialmediamonitoring.com",
+                "/home/deploy/r10-whitelabels/cakra12.com"
+            ]
+        },
+        {
+            "name": "R10 Web 1",
+            "ip": "144.217.255.222",
+            "port": "51999",
+            "usernames": [
+                "deploy"
+            ],
+            "paths": [
+                "/var/www/r10-beta/frontend",
+                "/var/www/r10-beta/frontend/pre-beta",
+                "/var/www/v3/app.cakradata.id",
+                "/var/www/command-center.medialistening.digipop.ai",
+                "/var/www/tni.ripple10.com",
+                "/var/www/r10-beta/api",
+                "/var/www/v3/frontend/public",
+                "/var/www/v2/backend"
+            ]
+        }
+    ],
+    "commands": {
+        "before": [
+            "npm run build",
+            "npm run build-staging",
+            "npm run build-test"
+        ],
+        "after": [
+            "echo $PATH",
+            "rm {PATH}",
+            "cp {PATH} /tmp/tes2",
+            "mv builds/salesapp* /tmp",
+            "ssh -p 51999 deploy@crawl.prod \"pm2 reload server-monit --update-env && pm2 status\"",
+            "ssh -p 51999 pobdev@103.157.96.47 \"~/.nvm/versions/node/v14.15.0/bin/pm2 reload 0 --update-env && ~/.nvm/versions/node/v14.15.0/bin/pm2 status\"",
+            "ssh -p 51999 pobdev@103.157.96.47 \"~/.nvm/versions/node/v14.15.0/bin/pm2 reload 1 --update-env && ~/.nvm/versions/node/v14.15.0/bin/pm2 status\""
+        ]
+    }
+}

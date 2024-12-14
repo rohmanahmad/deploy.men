@@ -13,15 +13,86 @@
             ]
         },
         {
-            "name": "r10-api",
-            "path": "/Users/rohmanahmad/Projects/office/r10-api",
+            "name": "r10-crawl-monit",
+            "path": "/Users/rohmanahmad/Projects/office/crawl-monit",
             "included_files": [
-                "index.html",
-                "bundle.*",
-                "assets"
+                "app",
+                "config",
+                "database",
+                "libraries",
+                "providers",
+                "public",
+                "resources",
+                "start",
+                "package.json",
+                "pm2.js",
+                "server.js",
+                "server_start.js",
+                "ace"
             ],
             "excluded_files": [
-                "data"
+                ".env",
+                ".eslint*",
+                ".editor*",
+                "crawl-monit.*",
+                "deploy*",
+                "docker-*",
+                "Dockerfile",
+                "README.md",
+                "Dockerfile",
+                "package-lock.json"
+            ]
+        },
+        {
+            "name": "r10-tools",
+            "path": "/Users/rohmanahmad/Projects/office/tools",
+            "included_files": [
+                "streams",
+                "migration",
+                "package.json"
+            ],
+            "excluded_files": [
+                ".env",
+                ".gitignore",
+                "deploydev.sh",
+                "package-lock.json",
+                "env-example",
+                "eslintrc.js",
+                ".vscode"
+            ]
+        },
+        {
+            "name": "api-pob",
+            "path": "/Users/rohmanahmad/Projects/StartUp/SalesApp/backend-app/builds",
+            "included_files": [
+                "server_linux_x64_v0.9.1-rc1"
+            ],
+            "excluded_files": [
+            ]
+        },
+        {
+            "name": "cmd-pob",
+            "path": "/Users/rohmanahmad/Projects/StartUp/SalesApp/app-commands/builds",
+            "included_files": [
+                "cmd_linux_x64_v1.1.1-rc0",
+                "package.json"
+            ],
+            "excluded_files": [
+            ]
+        },
+        {
+            "name": "r10-analytics",
+            "path": "/Users/ivosights/Projects/office/r10-analytics",
+            "included_files": [
+                "package.json"
+            ],
+            "excluded_files": [
+                ".env",
+                "README.md",
+                "yarn.lock",
+                "LICENSE",
+                ".gitignore",
+                ".vscode"
             ]
         }
     ],
@@ -39,6 +110,63 @@
                 "/home/deploy/tes",
                 "/home/developer/tes"
             ]
+        },
+        {
+            "ip": "139.59.234.160",
+            "port": "22",
+            "usernames": [
+                "user1",
+                "deploy"
+            ],
+            "paths": [
+                "/tmp/tes-tools-folder",
+                "/home/deploy/tools",
+                "/home/developer/tes"
+            ]
+        },
+        {
+            "ip": "103.157.96.47",
+            "port": "51999",
+            "usernames": [
+                "pob",
+                "pobdev"
+            ],
+            "paths": [
+                "/home/pobdev/webapp/api-dev.pasaronlinebatu.com/server1",
+                "/home/pobdev/webapp/api-dev.pasaronlinebatu.com/server2",
+                "/home/pobdev/cliapp/pob-cli"
+            ]
+        },
+        {
+            "ip": "159.65.10.9",
+            "port": "22",
+            "usernames": [
+                "deploy"
+            ],
+            "paths": [
+                "/home/deploy/v3.r10.co/public"
+            ]
+        },
+        {
+            "ip": "192.99.58.209",
+            "port": "51999",
+            "usernames": [
+                "deploy"
+            ],
+            "paths": [
+                "/home/deploy/monit",
+                "/tmp/tes"
+            ]
+        },
+        {
+            "ip": "144.217.14.234",
+            "port": "51999",
+            "usernames": [
+                "deploy"
+            ],
+            "paths": [
+                "/home/deploy/r10-analytics"
+            ]
         }
     ],
     "commands": {
@@ -50,7 +178,8 @@
         "after": [
             "mv {PATH} /tmp/tes",
             "rm {PATH}",
-            "cp {PATH} /tmp/tes2"
+            "cp {PATH} /tmp/tes2",
+            "ssh -p 51999 deploy@crawl.prod \"pm2 reload server-monit --update-env && pm2 status\""
         ]
     }
 }

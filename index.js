@@ -89,7 +89,7 @@ class Command {
     /* end of private functions */
     async selectServer () {
         const serverMapping = config.servers.reduce((r, x) => {
-            const key = `${x.ip}:${x.port}`
+            const key = `${x.ip}:${x.port} (${x.name})`
             if (!r[key]) r[key] = x
             return r
         }, {})
@@ -163,11 +163,15 @@ class Command {
         rsyncCommand.push('rsync -azvP --progress')
         // building project
         let includes = this.project.included_files || ['.']
+        // mapping port
+        const serverPort = `-e "ssh -p ${this.server.port}"`
+        rsyncCommand.push(serverPort)
+        // mapping files/folder to be copy
         if (includes.length > 0) includes = includes.join(' ')
         if (includes) rsyncCommand.push(includes)
-        // building server
-        const server = `-e "ssh -p ${this.server.port}" ${this.server.user}@${this.server.ip}:${this.server.path}`
-        rsyncCommand.push(server)
+        // adding server address and path
+        const serverAddrPath = `${this.server.user}@${this.server.ip}:${this.server.path}`
+        rsyncCommand.push(serverAddrPath)
         let excludes = this.project.excluded_files || []
         if (excludes.length > 0) excludes = excludes.map(x => `--exclude ${x}`).join(' ')
         if (excludes) rsyncCommand.push(excludes)
@@ -184,14 +188,15 @@ class Command {
     async run () {
         if (!this.command) throw new Error('Invalid Command')
         shell.echo('Scenario: ')
-        for (const c of this.command) {
-            shell.echo('- ' + c)
+        if (config.debug !== false) {
+            for (const c of this.command) {
+                shell.echo('- ' + c)
+            }
         }
         const command = this.command.join(' && ')
         shell.echo('Start Executing...')
         if(shell.exec(command).code !== 0) {
             shell.exit(1)
-            throw new Error('Error While Executing Command')
         }
         shell.echo("Deployment Success!!")
         shell.exit(0)

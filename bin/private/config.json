@@ -1,0 +1,68 @@
+{
+    "debug": false,
+    "projects": [
+        {
+            "name": "fiberstar-fe",
+            "path": "/Users/ivo/Projects/pribadi/fiberstar/frontend/src/dist",
+            "included_files": [
+                "index.html",
+                "assets"
+            ],
+            "excluded_files": [
+            ]
+        },
+        {
+            "name": "fiberstar-api",
+            "path": "/Users/ivo/Projects/pribadi/fiberstar/backend/src",
+            "included_files": [
+                "app",
+                "artisan",
+                "bootstrap",
+                "composer.json",
+                "composer.lock",
+                "config",
+                "database",
+                "package.json",
+                "phpunit.xml",
+                "public",
+                "resources",
+                "routes"
+            ],
+            "excluded_files": [
+                ".env",
+                ".env.example",
+                ".editorconfig",
+                "vite.config.js",
+                "tests",
+                "vendor",
+                "info.php",
+                "openapi.yml",
+                "storage"
+            ]
+        }
+    ],
+    "servers": [
+        {
+            "name": "Fiberstar Staging",
+            "ip": "15.235.140.221",
+            "port": "22",
+            "usernames": [
+                "deploy"
+            ],
+            "paths": [
+                "/var/www/html/fs-api.s45.in",
+                "/var/www/html/fs-fe.s45.in"
+            ]
+        }
+    ],
+    "commands": {
+        "before": [
+            "npm run build",
+            "npm run build-staging",
+            "npm run build-test"
+        ],
+        "after": [
+            "echo $PATH"
+        ]
+    }
+}
